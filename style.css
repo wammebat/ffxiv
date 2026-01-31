@@ -9,7 +9,7 @@
 
 :root {
     /* Seafoam Green & Dark Blue Color Scheme */
-    --bg-darkest: #0f1419;
+    --bg-darkest: #4db8a8 /*#0f1419*/;
     --bg-dark: #1a2332;
     --bg-medium: #1e2936;
     --bg-elevated: #243142;
