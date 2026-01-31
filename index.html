@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFXIV Companion - Relic Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Desktop Sidebar -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h1 id="sidebar-title">FFXIV Companion</h1>
+            <button id="sidebar-toggle" class="icon-btn" aria-label="Toggle sidebar">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"/>
+                </svg>
+            </button>
+        </div>
+        
+        <nav class="sidebar-nav" id="sidebar-nav">
+            <!-- Navigation items will be dynamically generated -->
+        </nav>
+    </aside>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+    </button>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+    <aside id="mobile-sidebar" class="mobile-sidebar">
+        <div class="mobile-sidebar-header">
+            <h1>FFXIV Companion</h1>
+            <button id="mobile-close-btn" class="icon-btn" aria-label="Close menu">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-sidebar-nav" id="mobile-sidebar-nav">
+            <!-- Navigation items will be dynamically generated -->
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="main-content">
+        <div id="app-container">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
