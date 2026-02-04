@@ -1,0 +1,32 @@
+# Local Configuration Files
+# Contains sensitive credentials and should never be committed
+config.local.js
+.env.local
+.env.*.local
+
+# Environment Variable Files
+.env
+.env.production
+.env.development
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node Modules (if using npm/node)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build and Distribution Files
+dist/
+build/
+*.bundle.js
+
+# Logs
+logs/
+*.log

@@ -1,0 +1,14 @@
+{
+  "name": "ffxiv-server",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test-connection": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "pg": "^8.11.0"
+  }
+}

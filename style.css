@@ -9,11 +9,12 @@
 
 :root {
     /* Seafoam Green & Dark Blue Color Scheme */
-    --bg-darkest: #4db8a8 /*#0f1419*/;
-    --bg-dark: #1a2332;
-    --bg-medium: #1e2936;
-    --bg-elevated: #243142;
-    --bg-hover: #2a3848;
+    --bg-darkest: #072731 /*#0f1419*/;
+    --bg-dark: #041e25/*#05313f #1a2332*/;
+    --bg-medium: #05252e/*#1e2936*/;
+    --bg-elevated: #184b5f/*#243142*/;
+    --bg-hover: #8D6A9F/*#2a3848*/;
+    --ui-icon: #00A0E9;
     
     --border-color: #2d3f52;
     --border-light: #3a4d62;
