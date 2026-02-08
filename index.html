@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FFXIV Companion - Relic Tracker</title>
+    <title>FFXIV Companion - Modular Webapp</title>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-extended.css">
+    <link rel="stylesheet" href="sync-ui-styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚔️</text></svg>">
 </head>
 <body>
     <!-- Top Header Bar -->
@@ -48,68 +55,6 @@
         <aside class="sidebar" id="sidebar">
             <nav class="sidebar-nav">
                 
-                <!-- Search
-                Achievements
-                    **Search
-                    **Titles
-                    **Item Rewards
-                    **Overview
-                    Battle
-                    PvP
-                    Character
-                    Items
-                    Crafting & Gathering
-                    Quests
-                    Exploration
-                    Grand Company
-                    Legacy
-                Fashion
-                    Accessories
-                    Facewear
-                    Outfits
-                    Armoire
-                    PvP Gear
-                Records
-                    Field Records
-                    Survey Records
-                    Occult Records 
-                Levequests 
-                        Battlecraft
-                        Tradecraft
-                        Fieldcraft 
-                Triple Triad
-                    Cards
-                    NPCs
-                    Decks
-                    Packs
-                Relics
-                    Weapons
-                    Ultimate
-                    Armor
-                    Tools
-                    GARO
-                Tools
-                    Bicolor Gemstones
-                    Market Board
-                    Materiel Container
-                    Treasure Hunt
-                    Random
-                Fish (hyperlink https://ff14fish.carbuncleplushy.com/)
-                Moogle Treasure Trove
-                Credits
-                    Teamcraft
-                    Universalis
-                Credits
-                    This is a personal project utilizing the resources and design of other projects to learn web development and database management.
-                    The majority of this site is functionality copied from other sources. The intent is to gather many of my favorite resources into a single place and customize it for my personal use.
-                    Please check out the original sources!
-                        FFXIV Collect https://ffxivcollect.com
-                        Teamcraft https://ffxivteamcraft.com/
-                        Lynn.pet https://lynn.pet/
-                        Universalis https://universalis.app/
-                        Raphael https://www.raphael-xiv.com/
-                    -->
-
                 <!-- Relic Tracker Section -->
                 <div class="nav-section" data-section="relics">
                     <div class="nav-item" data-has-submenu="true">
@@ -148,7 +93,7 @@
                             </svg>
                         </div>
                         <div class="submenu">
-                            <a href="#" class="submenu-item active" data-page="node-tracker">Node Tracker</a>
+                            <a href="#" class="submenu-item" data-page="node-tracker">Node Tracker</a>
                             <a href="#" class="submenu-item" data-page="timers">Timers</a>
                             <a href="#" class="submenu-item" data-page="folklore">Folklore</a>
                         </div>
@@ -168,7 +113,7 @@
                             </svg>
                         </div>
                         <div class="submenu">
-                            <a href="#" class="submenu-item active" data-page="recipe-list">Recipe List</a>
+                            <a href="#" class="submenu-item" data-page="recipe-list">Recipe List</a>
                             <a href="#" class="submenu-item" data-page="materials">Materials</a>
                             <a href="#" class="submenu-item" data-page="rotations">Rotations</a>
                         </div>
@@ -189,7 +134,7 @@
                             </svg>
                         </div>
                         <div class="submenu">
-                            <a href="#" class="submenu-item active" data-page="mounts">Mounts</a>
+                            <a href="#" class="submenu-item" data-page="mounts">Mounts</a>
                             <a href="#" class="submenu-item" data-page="minions">Minions</a>
                             <a href="#" class="submenu-item" data-page="hairstyles">Hairstyles</a>
                             <a href="#" class="submenu-item" data-page="emotes">Emotes</a>
@@ -209,12 +154,12 @@
                                 <path d="M9 3v18M3 9h18M3 15h18M15 3v18"/>
                             </svg>
                             <span class="nav-label">Solvers</span>
-                            <svg class="expand-icon" width="16" height="16" fill=none stroke="currentColor" stroke-width="2">
+                            <svg class="expand-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M6 9l4 4 4-4"/>
                             </svg>
                         </div>
                         <div class="submenu">
-                            <a href="#" class="submenu-item active" data-page="faux-hallows">Faux Hallows</a>
+                            <a href="#" class="submenu-item" data-page="faux-hallows">Faux Hallows</a>
                             <a href="#" class="submenu-item" data-page="placeholder">Placeholder</a>
                         </div>
                     </div>
@@ -224,14 +169,14 @@
                 <div class="nav-section" data-section="maps">
                     <div class="nav-item" data-has-submenu="true">
                         <div class="nav-item-content">
-                            <svg width="20" height="20" viewBox="0 0 70.867 70.867" enable-background="new 0 0 70.866 70.867" id="圖層_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg class="nav-icon" width="20" height="20" viewBox="0 0 70.867 70.867" enable-background="new 0 0 70.866 70.867">
                                 <g>
                                     <g>
-                                        <polygon fill=none points="    44.123,67.934 61.502,63.322 61.502,22.418 44.123,27.029   " stroke="var(--ui-icon)" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-                                        <polygon fill=none points="    44.123,67.934 26.743,63.322 26.743,22.418 44.123,27.029   " stroke="var(--ui-icon)" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-                                        <polygon fill=none points="9.364,67.934     26.743,63.322 26.743,22.418 9.364,27.029   " stroke="var(--ui-icon)" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-                                        <path d="M30.035,17.021    c0,7.78,14.088,25.658,14.088,25.658s14.088-17.878,14.088-25.658c0-7.781-6.308-14.088-14.088-14.088    C36.342,2.934,30.035,9.24,30.035,17.021z" fill=#05252e stroke="#00A0E9" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
-                                        <circle cx="44.123" cy="17.66" fill=none r="6.731" stroke="var(--ui-icon)" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+                                        <polygon fill="none" points="44.123,67.934 61.502,63.322 61.502,22.418 44.123,27.029" stroke="var(--ui-icon)" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+                                        <polygon fill="none" points="44.123,67.934 26.743,63.322 26.743,22.418 44.123,27.029" stroke="var(--ui-icon)" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+                                        <polygon fill="none" points="9.364,67.934 26.743,63.322 26.743,22.418 9.364,27.029" stroke="var(--ui-icon)" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+                                        <path d="M30.035,17.021c0,7.78,14.088,25.658,14.088,25.658s14.088-17.878,14.088-25.658c0-7.781-6.308-14.088-14.088-14.088C36.342,2.934,30.035,9.24,30.035,17.021z" fill="#05252e" stroke="#00A0E9" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+                                        <circle cx="44.123" cy="17.66" fill="none" r="6.731" stroke="var(--ui-icon)" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
                                     </g>
                                 </g>
                             </svg>
@@ -241,7 +186,7 @@
                             </svg>
                         </div>
                         <div class="submenu">
-                            <a href="#" class="submenu-item active" data-page="all-maps">All Maps</a>
+                            <a href="#" class="submenu-item" data-page="all-maps">All Maps</a>
                             <a href="#" class="submenu-item" data-page="node-maps">Node Maps</a>
                             <a href="#" class="submenu-item" data-page="fishing-maps">Fishing Maps</a>
                         </div>
@@ -297,6 +242,27 @@
         </main>
     </div>
 
-    <script src="app.js"></script>
+    <!-- JavaScript Modules - Load in dependency order -->
+    <!-- 1. Configuration -->
+    <script src="config.js"></script>
+    
+    <!-- 2. Core Services -->
+    <script src="data-layer.js"></script>
+    <script src="api-service.js"></script>
+    <script src="ui-helpers.js"></script>
+    
+    <!-- 3. Sync System -->
+    <script src="api-schema-mapper.js"></script>
+    <script src="database-sync-service.js"></script>
+    <script src="sync-management-ui.js"></script>
+    
+    <!-- 4. Module System -->
+    <script src="module-manager.js"></script>
+    
+    <!-- 5. Game Modules -->
+    <script src="ffxiv-module.js"></script>
+    
+    <!-- 6. Main Application Bootstrap -->
+    <script src="app-main.js"></script>
 </body>
 </html>
